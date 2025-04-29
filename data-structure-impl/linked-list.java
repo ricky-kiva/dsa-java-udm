@@ -54,4 +54,41 @@ class LinkedList {
 
         System.out.println();
     }
+
+    public void remove(int data) {
+        // if Linked List is empty 
+        if (head == null) {
+            return;
+        }
+
+        // if want to remove the first node
+        if (head.data == data) {
+            head = head.next;
+
+            // if after removing the first node, there's no element
+            if (head == null) {
+                tail = null;
+            }
+
+            return;
+        }
+
+        // if want to remove node after the first node
+        Node current = head;
+
+        while (current.next != null) {
+            if (current.next.data == data) {
+                current.next = current.next.next;
+
+                // if after removing the node, the last node points to null
+                if (current.next == null) {
+                    tail = current;
+                }
+
+                return;
+            }
+
+            current = current.next;
+        }
+    }
 }
