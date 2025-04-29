@@ -44,10 +44,11 @@ A. Big-O Notation: describes how the Runtime or Space of an algorithm grows as t
           - Runtime:
             - ```
               function(arr) {
-                for (int i = 0; i < arr.length; i++) {
-                  for (int j = 0; j < arr.length; j++) {
-                      println(element);
-                  }
+                 for (int i = 0; i < arr.length; i++) {
+                   for (int j = 0; j < arr.length; j++) {
+                     println(element);
+                   }
+                 }
               }
               ```
       - O(log(n)) (Logarithmic Complexity): algorithm's runtime grows logarithmically, typically halving the input size with each step
@@ -85,9 +86,9 @@ A. Big-O Notation: describes how the Runtime or Space of an algorithm grows as t
     - The runtime complexity of the algorithm above is O(n^2 + n)
     - We drop the `n` because it's non-dominant, so the final Big-O notation is O(n^2)
 
-B. Data Structures
-    1. Linked List:
-        - collection of data elements whose order is not given by their physical placement in memory
-        - data elements points to the next element instead
-        - Visualization:
-            - <img src="../main/Stock/linked-list-viz.jpg" alt="Linked List Visualization">
+B. Data Structures  
+1. Linked List:
+    - collection of data elements whose order is not given by their physical placement in memory
+    - data elements point to the next element instead
+    - Visualization:
+        - <img src="../main/stock/linked-list-viz.jpg" alt="Linked List Visualization" height="192">
