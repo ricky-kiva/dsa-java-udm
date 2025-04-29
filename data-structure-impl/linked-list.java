@@ -9,6 +9,7 @@ class Node {
 }
 
 class LinkedList {
+    // clarification: head & tail CONTAINS `data`
     Node head;
     Node tail;
 
@@ -28,5 +29,18 @@ class LinkedList {
 
         tail.next = newNode;
         tail = newNode;
+    }
+
+    public void prepend(int data) {
+        Node newNode = new Node(data);
+
+        if (head == null) {
+            head.next = newNode;
+            tail.next = newNode;
+            return;
+        }
+
+        newNode.next = head;
+        head = newNode;
     }
 }
