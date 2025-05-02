@@ -1,3 +1,5 @@
+package ds_class_impl;
+
 class Node {
     int data;
     Node next;
