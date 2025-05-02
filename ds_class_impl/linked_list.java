@@ -24,8 +24,8 @@ class LinkedList {
         Node newNode = new Node(data);
 
         if (head == null) {
-            head.next = newNode;
-            tail.next = newNode;
+            head = newNode;
+            tail = newNode;
             return;
         }
 
@@ -37,8 +37,8 @@ class LinkedList {
         Node newNode = new Node(data);
 
         if (head == null) {
-            head.next = newNode;
-            tail.next = newNode;
+            head = newNode;
+            tail = newNode;
             return;
         }
 
